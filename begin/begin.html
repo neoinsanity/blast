@@ -1,0 +1,98 @@
+<div>
+    <h1>A Rational</h1>
+    One of the most difficult issues facing the initial implementation of a
+    project is to get a good start setting up the initial structure. A
+    complete project should enable ease of development by allowing for quick
+    iterations. In addition, a good project structure should aid in
+    maintaining standards and conventions.
+    <p/>
+    A basic project structure should provide the facilities for:
+    <ul>
+        <li>Source Control Configuration</li>
+        <li>Dev Environment Configuration</li>
+        <li>Package Control and Configuration</li>
+        <li>Test Configuration and Execution</li>
+        <li>Documentation Generation</li>
+    </ul>
+    <p/>
+    While the project structure presented here is in now way definitive, it
+    does provide for most typical projects. At the very least, it provides a
+    project structure that can be extended as project requirements grow and
+    shift under the pressure of evolving evolution.
+    <p/>
+    The source code for this project can be found on GitHub
+    <p/>
+</div>
+
+<div>
+    <h2>Source Control Configuration</h2>
+</div>
+
+<div>
+    <h2>Dev Environment Configuration</h2>
+</div>
+
+<div>
+    <h2>Package Control and Configuration</h2>
+</div>
+
+<div>
+    <h2>Test Configuration and Excecution</h2>
+</div>
+
+<div>
+    <h2>Documentation Generation</h2>
+</div>
+
+<div>
+    <h1>Link Hold</h1>
+
+    Get the start up branch
+    <pre class="bash: plain gutter: false">
+    git clone --branch the_start https://github.com/neoinsanity/hola_mundo.git
+    </pre>
+
+    GitHub MarkDown
+    https://help.github.com/articles/github-flavored-markdown
+    Markdown Documentation
+    http://daringfireball.net/projects/markdown/syntax
+
+    <span>
+        Tree command: tree --dirsfirst -I "venv|BUILD|*.pyc" >> dir.txt
+        will produce:
+        <pre class="brush plain: title: 'Project Directory' gutter: false">
+.
+├── bin
+│   ├── dev_requirements.txt
+│   ├── dev_setup.sh
+│   ├── doc_build.sh
+│   ├── enable_dev.sh
+│   ├── nose.cfg
+│   └── run_test.sh
+├── doc
+│   ├── conf.py
+│   └── index.rst
+├── hola_mundo
+│   ├── resources
+│   │   ├── grito.txt
+│   │   └── mundo.txt
+│   ├── __init__.py
+│   ├── el_grito.py
+│   ├── el_mundo.py
+│   └── main.py
+├── test
+│   ├── __init__.py
+│   ├── el_grito_test.py
+│   └── el_mundo_test.py
+├── MANIFEST.in
+├── README.md
+└── dir.txt
+
+       </pre>
+    </span>
+
+    <h2>reStructuredText</h2>
+    http://docs.python-guide.org/en/latest/writing/documentation/
+    http://sphinx-doc.org/contents.html
+    http://sphinx-doc.org/rest.html
+</div>

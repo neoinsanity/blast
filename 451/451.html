@@ -1,47 +1,42 @@
 <h1 xmlns="http://www.w3.org/1999/html">Blog Dorking</h1>
 <div>
-    <h2>451</h2>
-    Ah yes, the first blog. The one were the angst of a topic and stress of
-    layout and presentation collide. Procrastination found ready allies to
-    ensure some wasted hours. It can be amazing how much time can pass while
-    flipping back and forth in edit and preview mode. Background change, font
-    change, background color change, font color change, ... rinse and
-    repeat.
-    <p/>
-    The realization that presentation fiddling would be easier if there was an
-    actual blog post with a good amount of content and content variety,
-    finally interrupted all the false starts. A spoonful of sugar helps the
-    medicine got down, and for this blog that sugar was code syntax
-    highlighting. While it would be simple enough to place code samples in an
-    html block that would preserve the code format, it would be much more
-    elegant to have actual code syntax highlighting.
-    <p/>
-    To that end, a little web searching led to a fairly simple solution. The
-    solution was to utilize
-    <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter
-    </a>, which is quite ubiquitous and easy to use. SyntaxHighlighter is
-    a a javascript library that is self contained. It is open source and can
-    be found at
-    <a href="https://github.com/alexgorbatchev/syntaxhighlighter">
-        alexgorbatchev/syntaxhighlighter</a>. There is plenty of material on
-    how SyntaxHighlighter is used and installed in a variety of environments.
-    For instructions on how to install SyntaxHighlighter for use on
-    Blogger/Blogspt can be found
-    <a href="http://www.stramaxon.com/2012/07/add-syntax-highlighter-to-blogger.html">here</a>.
-    <p/>
+  <h2>451</h2>
+  Ah yes, the first blog. The one were the angst of a topic and stress of layout and presentation
+  collide. Procrastination found ready allies to ensure some wasted hours. It can be amazing how
+  much time can pass while flipping back and forth in edit and preview mode. Background change,
+  font change, background color change, font color change, ... rinse and repeat.
+  <p/>
+  The realization that presentation fiddling would be easier if there was an actual blog post with
+  a good amount of content and content variety finally interrupted all the false starts. A spoonful
+  of sugar helps the medicine got down, and for this blog that sugar was code syntax highlighting.
+  While it would be simple enough to place code samples in an html block that would preserve the
+  code format, it would be much more elegant to have actual code syntax highlighting.
+  <p/>
+  To that end, a little web searching led to a fairly simple solution. The solution was to utilize
+  <a href="http://alexgorbatchev.com/SyntaxHighlighter/">SyntaxHighlighter</a>, which is quite
+  ubiquitous and easy to use. SyntaxHighlighter is a a javascript library that is self contained.
+  It is open source and can be found at
+  <a href="https://github.com/alexgorbatchev/syntaxhighlighter">alexgorbatchev/syntaxhighlighter</a>.
+  There is plenty of material on how SyntaxHighlighter is used and installed in a variety of
+  environments. For instructions on how to install SyntaxHighlighter for use on Blogger/Blogspt can
+  be found
+  <a href="http://www.stramaxon.com/2012/07/add-syntax-highlighter-to-blogger.html">here</a>.
+  <p/>
 </div>
 <div>
-    <h2>Is this meta?</h2>
-    SyntaxHighlighter has a wonderful array of languages that it supports.
-    While it is easy enough to look the full range of supported languages, the
-    full power of SyntaxHighlighter comes with some of the tag attributes
-    that can be used.
-    <p/>
+  <h2>Is this meta?</h2>
+  SyntaxHighlighter has a wonderful array of languages that it supports. It is easy enough to
+  lookup the full range of supported languages, Just take a step through the javascript, or take
+  a look at the online documentation.
+  <p/>
+  For the purposes of filling up a page to get this blog started, a couple of example uses of
+  Syntaxhighlighters attribute flags will be demonstrated.
+  <p/>
 
-    <h3>HTML/XML</h3>
-    The first example is how to get XML/HTML syntax as this is necessary to
-    learn to get the highlighting for the other examples. To get the
-    highlight example below:
+  <h3>HTML/XML</h3>
+  The first example is how to get XML/HTML syntax highlighting. This is necessary to learn to get
+  demonstrate the html syntax to highlighting examples in other languages. Here's the example of
+  how to insert html sample code:
     <pre class="brush: xml">
       &lt;html&gt;
         &lt;body&gt;
@@ -49,7 +44,7 @@
         &lt;/body&gt;
       &lt;/html&gt;
     </pre>
-    You will need to add the following highlight to your page.
+  You will need to add the following highlight to your page.
     <pre class="brush: xml">
         &lt;pre class="brush: xml"&gt;
           &amp;lt;html&amp;gt;
@@ -59,46 +54,44 @@
           &amp;lt;/html&amp;gt;
         &lt;/pre&gt;
     </pre>
-    Keep in mind that to get the HTML, BODY, and PRE tags to show up
-    in code examples. the use of the ampersand convention is necessary.
-    <p/>
+  Keep in mind that to get the HTML, BODY, and PRE tags to show up in code examples. the use of the
+  ampersand directive is necessary.
+  <p/>
 </div>
 <div>
-    While it is simple enough to do plain text in a simple &lt;block-quote&gt;,
-    SyntaxHighlighter gives nice line numbers. And the line numbers can be
-    adjusted by setting a first-line property.
+  While it is simple enough to do plain text in a simple &lt;block-quote&gt;, SyntaxHighlighter
+  gives nice line numbers. And the line numbers can be adjusted by setting a first-line property.
     <pre class="brush: xml">
         &lt;pre class="brush: plain first-line: 42"&gt;
             Hola! Mundo
         &lt;/pre&gt;
     </pre>
-    Which leads to:
+  Which leads to:
     <pre class="brush: plain first-line: 42">
         Hola! Mundo
     </pre>
-    <p/>
+  <p/>
 </div>
 <div>
-    It is also possible to set a title for a code sample by utilizing the
-    title directive.
+  It is also possible to set a title for a code sample by utilizing the title directive.
     <pre class="brush: xml">
         &lt;pre class="brush: bash title: 'Sample Bash'"&gt;
             #!/usr/bin/env bash
             echo "Hola Mundo"
         &lt;/pre&gt;
     </pre>
-    Resulting in;
+  Resulting in;
     <pre class="brush: bash title: 'Sample Bash'">
         #!/usr/bin/env bash
         echo "Hola Mundo"
     </pre>
-    <p/>
+  <p/>
 </div>
 <div>
-    It is also possible to highlight individual lines, which can be useful
-    when there is a desire for emphasis.
+  To highlight individual lines, which can be useful when there is a desire for
+  emphasis.
     <pre class="brush: xml">
-        &lt;pre class="brush: js highlight: 5"&gt;
+        &lt;pre class="brush: js highlight: [2,5]"&gt;
         /*
         Hola Mundo Function
         */
@@ -107,8 +100,8 @@
         }
         &lt;/pre&gt;
     </pre>
-    Producting;
-    <pre class="brush: js highlight: 5">
+  Producting;
+    <pre class="brush: js highlight: [2,5]">
     /*
     Hola Mundo Function
     */
@@ -116,11 +109,11 @@
       console.log('Hola! %s', dude);
     }
     </pre>
-    <p/>
+  <p/>
 </div>
 <div>
-    In those cases where code samples may be large, it would be desirable to
-    have the sample start off collapsed.
+  In those cases where code samples may be large, it would be desirable to have the sample start
+  off collapsed.
     <pre class="brush: xml">
         &lt;pre class="brush: css collapse: true"&gt;
             #header {
@@ -129,20 +122,19 @@
             }
         &lt;/pre&gt;
     </pre>
-    Utilize the toolbar to un-collapse the code sample.
-    <pre class="brush: css collapse: true">
+  Leading to this collapse code sample.
+    <pre class="brush: css toolbar: true collapse: true">
         #header {
             padding-top: 15px;
             border-radius: inherit;
         }
     </pre>
-    <p/>
+  <p/>
 </div>
 <div>
-    If the desire is to have no toolbar for the given code snippet, utilize
-    the toolbar directive.
+  If the desire is to have a toolbar for the given code snippet, utilize the toolbar directive.
     <pre class="brush: xml">
-        &lt;pre class="brush: python toolbar: false"&gt;
+        &lt;pre class="brush: python toolbar: true"&gt;
         """A Class to greet the world"""
         class HolaMundo(object):
 
@@ -153,8 +145,8 @@
                 print 'Hola!', self.dude
         &lt;/pre&gt;
     </pre>
-    Which removes the toolbar as shown below;
-    <pre class="brush: python toolbar: false">
+  Which removes the toolbar as shown below;
+    <pre class="brush: python toolbar: true">
     """A Class to greet the world"""
     class HolaMundo(object):
 
@@ -164,22 +156,25 @@
         def grito(self):
             print 'Hola!', self.dude
     </pre>
-    <p/>
+  <p/>
 </div>
 <div>
-    Sometimes you may run into issues with the code sample gutters, which may
-    be an issue in some situations. These can be disabled utilizing the
-    gutter directive.
+  Sometime the use of gutters is not desired for a code sample. These can be disabled utilizing
+  the gutter directive.
     <pre class="brush: xml">
         &lt;pre class="brush: sql gutter: false"&gt;
-            select * from Mundo where name = "Mundo";
+            select * 
+            from Mundo 
+            where name = "Mundo";
         &lt;/pre&gt;
     </pre>
     <pre class="brush: sql gutter: false">
-        select * from Mundo where name = "Mundo";
+        select * 
+        from Mundo 
+        where name = "Mundo";
     </pre>
-    <p/>
+  <p/>
 </div>
 <div>
-    All of these directive can be mixed and matched.
+  All of these directive can be mixed and matched.
 </div>
