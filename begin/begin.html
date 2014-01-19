@@ -1,61 +1,95 @@
 <div>
-    <h1>A Rational</h1>
-    One of the most difficult issues facing the initial implementation of a
-    project is to get a good start setting up the initial structure. A
-    complete project should enable ease of development by allowing for quick
-    iterations. In addition, a good project structure should aid in
-    maintaining standards and conventions.
-    <p/>
-    A basic project structure should provide the facilities for:
-    <ul>
-        <li>Source Control Configuration</li>
-        <li>Dev Environment Configuration</li>
-        <li>Package Control and Configuration</li>
-        <li>Test Configuration and Execution</li>
-        <li>Documentation Generation</li>
-    </ul>
-    <p/>
-    While the project structure presented here is in now way definitive, it
-    does provide for most typical projects. At the very least, it provides a
-    project structure that can be extended as project requirements grow and
-    shift under the pressure of evolving evolution.
-    <p/>
-    The source code for this project can be found on GitHub
-    <p/>
+  <h1>A Structure for Pythonic Thought</h1>
+
+  <h3>Disregard At Your Own Peril</h3>
+  One of the most annoying issues facing the initial implementation of a Python project is
+  starting with a good initial project structure. A good project structure that enables ease of
+  development, and provides for maintaining an adequate level of quality in the code under
+  development.
+  <p/>
+  A basic project structure should provide the facilities for:
+  <dl>
+    <dt>Project Structure Facility Requirements</dt>
+    <dd>- Source Control Configuration</dd>
+    <dd>- Dev Environment Configuration</dd>
+    <dd>- Package Control and Configuration</dd>
+    <dd>- Test Configuration and Execution</dd>
+    <dd>- Documentation Generation</dd>
+  </dl>
+  <p/>
+  In the initial conception of thought into code, it is quite easy to forgo the need for any of the
+  basics that make for an adequate project structure. It would be erroneous to blame a lack of
+  adequate tools or standards. All of the popular programming languages have facilities for project
+  infrastructures. The culprit in most cases are the desire to place thoughts into code, and the
+  sheer number of alternative tools and schools of thought. To add to the complexity, it is often
+  the case that for service and cloud oriented projects there will eventually come the need to
+  implement CI and Ops requirements that at the initial stages of a project cannot be adequately
+  predicted.
+  <p/>
+
+  <h3>Sometimes Fish Out of Water are Evolving</h3>
+  Presented in this contribution is a minimal Python project structure. To the greatest degree
+  possible the structure attempts to provide the basic infrastructure for a project. It is most
+  certainly not adequate to the final needs of any given individual project. Rather, the project
+  structure presented here attempts to be light-weight. The desire is to enable the Python
+  developer to get a project up and running quickly, while minimizing the hindrance to allow for
+  the inevitable organic growth
+  <p/>
+  The project structure will be presented by way of narration. An example project will be
+  constructed to explain and demonstrate. The example project is 'Hola Mundo'.
+
+  <pre class="brush plain: title: 'Hola Mundo Project Directory' gutter: false">
+.
+├── bin
+├── doc
+├── hola_mundo
+│   └── util
+└── test
+  </pre>
+
+  'Hola Mundo' will demonstrate support for all of the basic facilities listed above. 
+  downloaded from GitHub at
+
+  <pre class="bash: plain gutter: false">
+    git clone --branch the_start https://github.com/neoinsanity/hola_mundo.git
+  </pre>
+
+  <p/>
+  The entire
+  <p/>
+</div>
+<div>
+  <h2>Source Control Configuration</h2>
 </div>
 
 <div>
-    <h2>Source Control Configuration</h2>
+  <h2>Dev Environment Configuration</h2>
 </div>
 
 <div>
-    <h2>Dev Environment Configuration</h2>
+  <h2>Package Control and Configuration</h2>
 </div>
 
 <div>
-    <h2>Package Control and Configuration</h2>
+  <h2>Test Configuration and Excecution</h2>
 </div>
 
 <div>
-    <h2>Test Configuration and Excecution</h2>
+  <h2>Documentation Generation</h2>
 </div>
 
 <div>
-    <h2>Documentation Generation</h2>
-</div>
+  <h1>Link Hold</h1>
 
-<div>
-    <h1>Link Hold</h1>
-
-    Get the start up branch
+  Get the start up branch
     <pre class="bash: plain gutter: false">
     git clone --branch the_start https://github.com/neoinsanity/hola_mundo.git
     </pre>
 
-    GitHub MarkDown
-    https://help.github.com/articles/github-flavored-markdown
-    Markdown Documentation
-    http://daringfireball.net/projects/markdown/syntax
+  GitHub MarkDown
+  https://help.github.com/articles/github-flavored-markdown
+  Markdown Documentation
+  http://daringfireball.net/projects/markdown/syntax
 
     <span>
         Tree command: tree --dirsfirst -I "venv|BUILD|*.pyc" >> dir.txt
@@ -63,6 +97,7 @@
         <pre class="brush plain: title: 'Project Directory' gutter: false">
 .
 ├── bin
+│   ├── clean_build.sh
 │   ├── dev_requirements.txt
 │   ├── dev_setup.sh
 │   ├── doc_build.sh
@@ -71,11 +106,16 @@
 │   └── run_test.sh
 ├── doc
 │   ├── conf.py
+│   ├── hola_mundo.el_grito.rst
+│   ├── hola_mundo.el_mundo.rst
+│   ├── hola_mundo.rst
+│   ├── hola_mundo.util.config_loader.rst
 │   └── index.rst
 ├── hola_mundo
-│   ├── resources
-│   │   ├── grito.txt
-│   │   └── mundo.txt
+│   ├── util
+│   │   ├── __init__.py
+│   │   ├── config.yaml
+│   │   └── config_loader.py
 │   ├── __init__.py
 │   ├── el_grito.py
 │   ├── el_mundo.py
@@ -86,13 +126,13 @@
 │   └── el_mundo_test.py
 ├── MANIFEST.in
 ├── README.md
-└── dir.txt
-
+├── setup.py
+└── .gitignore
        </pre>
     </span>
 
-    <h2>reStructuredText</h2>
-    http://docs.python-guide.org/en/latest/writing/documentation/
-    http://sphinx-doc.org/contents.html
-    http://sphinx-doc.org/rest.html
+  <h2>reStructuredText</h2>
+  http://docs.python-guide.org/en/latest/writing/documentation/
+  http://sphinx-doc.org/contents.html
+  http://sphinx-doc.org/rest.html
 </div>
